@@ -7,14 +7,14 @@
 你可以从 npm 进行安装
 
 ```shell
-npm install qiniu
+npm install node-qiniu
 ```
 
 也可以从 Github 进行下载安装
 
 ```shell
-$ git clone git://github.com/qiniu/nodejs-sdk qiniu
-$ cd qiniu
+$ git clone git://github.com/qiniu/node-qiniu
+$ cd node-qiniu
 $ npm install .
 ```
 
@@ -98,7 +98,7 @@ imagesBucket.putFile('exampleKey_2', __dirname + '/assets/example.jpg')
 var puttingStream = imagesBucket.createPutStream('exampleKey_3');
 var readingStream = fs.createReadStream(__dirname + '/assets/example.jpg');
 
-readingStream.pipe(readingStream)
+readingStream.pipe(puttingStream)
   .on('error', function(err) {
     console.error(err);
   })
@@ -438,6 +438,9 @@ image.fop()
     // imageData 为已打上水印的缩略图数据
   });
 ```
+
+## 模块结构
+![模块结构](http://ww2.sinaimg.cn/large/7287333fgw1e8263cvxeaj20mr0glgmp.jpg)
 
 ## License 
 
