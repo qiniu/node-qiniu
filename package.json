@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "underscore": "~1.5.1",
-    "request": "~2.27.0",
+    "request": "~2.88.2",
     "q": "~0.9.6",
     "dataStream": "0.0.5"
   },
